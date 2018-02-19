@@ -1,0 +1,90 @@
+<!-- mostrar en este HTML los TOPICS de /topics -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Foro de opinión</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <!--Añadiendo color a la barra de navegador que se verá desde versión movile-->
+    <meta name="theme-color" content="#ea292a" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+   </head>
+  <body>
+    <header>
+      <!-- As a link -->
+      <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#"> <h2 class="text-center">Foro Cool</h2></a>
+      </nav>
+     </header>
+
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-6">
+            <form class="form-inline margin-top-5" action="/action_page.php">
+              <input type="tema" placeholder="Busca un tema..." class="form-control input-74" id="">
+              <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+          </div>
+          <div class="col-8 offset-2">
+            <button type="button" class="btn btn-primary btn-100 margin-top-3">Crear tema</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="margin-top-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Temas creados:</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!--Div donde estarán los cards para los temas.-->
+            <div id="">
+              <!--Estos cards se repeteián por la cantidad de temas que hayan.-->
+              <div class="card margin-top-3">
+                <div class="card-block">
+                  <p id="">Encontré esto por internet.</p>
+                  <p>Por: <span id="">Emanuel</span></p>
+                  <p>Respuestas: <span id="">0</span></p>
+                </div>
+              </div>
+              <div class="card margin-top-3">
+                <div class="card-block">
+                  <p id="">Encontré esto por internet.</p>
+                  <p>Por: <span id="">Emanuel</span></p>
+                  <p>Respuestas: <span id="">0</span></p>
+                </div>
+              </div>
+              <div class="card margin-top-3">
+                <div class="card-block">
+                  <p id="">Encontré esto por internet.</p>
+                  <p>Por: <span id="">Emanuel</span></p>
+                  <p>Respuestas: <span id="">0</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script   src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"       crossorigin="anonymous"></script>
+    <script   src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

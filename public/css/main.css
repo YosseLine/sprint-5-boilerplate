@@ -1,0 +1,18 @@
+.form-control.input-74{
+  width: 74%;
+}
+.margin-top-5{
+  margin-top: 5vh;
+}
+button.btn-100{
+  width: 100%;
+}
+.margin-top-3{
+  margin-top: 3vh;
+}
+
+@media (min-width:'768px') {
+  .form-control.input-74{
+    width: 100%;
+  }
+}
