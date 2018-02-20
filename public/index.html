@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <title>Foro de opinión</title>
     <link rel="icon" type="image/png" href="assets/images/logo.png">
-    <!--Añadiendo color a la barra de navegador que se verá desde versión movile-->
-    <meta name="theme-color" content="#ea292a" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
@@ -26,14 +24,14 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-6 col-lg-6">
+          <div class="col-12 col-sm-12 col-lg-12">
             <form class="form-inline margin-top-5" action="/action_page.php">
-              <input type="tema" placeholder="Busca un tema..." class="form-control input-74" id="">
-              <button type="submit" class="btn btn-primary">Buscar</button>
+              <input type="tema" placeholder="Busca un tema..." class="form-control input-80" id="">
+              <button type="submit" class="btn btn-primary btn-20">Buscar</button>
             </form>
           </div>
-          <div class="col-8 offset-2">
-            <button type="button" class="btn btn-primary btn-100 margin-top-3">Crear tema</button>
+          <div class="col-5 offset-7 col-sm-3 offset-sm-9 col-md-3 offset-md-9 col-lg-2 offset-lg-9">
+            <button type="button" class="btn btn-primary btn-100 margin-top-3" data-toggle="modal" data-target="#myModal">Crear tema</button>
           </div>
         </div>
       </div>
@@ -50,7 +48,7 @@
           <div class="col-12">
             <!--Div donde estarán los cards para los temas.-->
             <div id="">
-              <!--Estos cards se repeteián por la cantidad de temas que hayan.-->
+              <!--Estos cards se repetirán por la cantidad de temas que hayan.-->
               <div class="card margin-top-3">
                 <div class="card-block">
                   <p id="">Encontré esto por internet.</p>
@@ -77,6 +75,36 @@
         </div>
       </div>
     </section>
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Crera nuevo tema</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="/action_page.php">
+              <div class="form-group">
+                <label for="name">Por:</label>
+                <input type="text" class="form-control" id="email" placeholder="Ingresa tu nombre" name="name">
+              </div>
+              <div class="form-group">
+                <label for="comment">Mensaje:</label>
+                <textarea class="form-control" rows="5" id="comment"placeholder="Ingresa tu mensaje"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a type="submit" class="btn btn-primary" href='views/verTopic.html?topic_id=2'>Crear tema</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- jQuery -->
